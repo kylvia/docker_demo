@@ -13,4 +13,4 @@ script:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker build -t kylvia/docker_demo:latest .
   - docker tag kylvia/docker_demo:latest jiaoa/docker_demo:latest
-  - docker push kylvia/docker_demo:latest
+  - docker push jiaoa/docker_demo:latest
